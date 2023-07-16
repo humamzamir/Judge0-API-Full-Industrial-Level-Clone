@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Judge0 IDE</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark border-bottom border-bottom-dark">
+    <div class="container">
+        <div class="navbar-collapse" href="http://localhost:9091/" ><h1>Judge0 IDE</h1></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <http://localhost:9091/>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <form id="myform" name="myform" method="post" action="compilecode">
+      <div class="mb-3">
+        <h4 class="code">Code</h4>
+        <textarea class="form-control" rows="13" id="code" name="code"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <h4 class="input">Input</h4>
+        <textarea class="form-control" rows="10" id="input" name="input"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <h4 class="code">Language:</h4>
+        <select class="form-select" name="lang">
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Nim">Nim</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <h4>Compile With Input:</h4>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inputRadio" id="inputRadio1" value="true">
+          <label class="form-check-label" for="inputRadio1">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inputRadio" id="inputRadio2" value="false">
+          <label class="form-check-label" for="inputRadio2">No</label>
+        </div>
+      </div>
+
+      <input class="button" type="submit" value="Run" name="Run" />
+    </form>
+  </div>
+
+  <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
